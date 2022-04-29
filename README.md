@@ -3,6 +3,7 @@
 <p>
 To make a tictactoe game in which two players can play in browser. Basic functionality should manipulate the DOM so that two different players can click on different boxes. Winning logic must be applied so that the console can read what player has won.
 </p>
+
 ## Plan approach to solving the problem
 
 1. day 1 Deliverables for Fri 29 April 
