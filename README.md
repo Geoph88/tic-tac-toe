@@ -10,7 +10,7 @@ To make a tictactoe game in which two players can play in browser. Basic functio
 - Set up the HTML and link to respected .css and .js sheets
 - Set up tags in the HTML to store the headings, game board, text for which player has won and lost. This can be done with h1 tag to store the                heading of the game, a section tag within a main tag with a class of "container" to store the rows. The section tag will then contain span tags            to store player inputs. 
 - add basic css to the HTML elements to make for an easier development experience. For example, putting background colors and inputting the                  .container to display:grid of 3 coloumns by 3 rows.
-- Do a flowchart for how the game should work. <a href "https://lucid.app/lucidchart/85819bc5-d467-45bc-a6d9-83e846fbd0aa/edit?invitationId=inv_3fe3a7cc-9126-4919-863f-f0af975de505">Click here for a flowchart on how the game should work.</a>
+- Do a flowchart for how the game should work. <a href= "https://lucid.app/lucidchart/85819bc5-d467-45bc-a6d9-83e846fbd0aa/edit?invitationId=inv_3fe3a7cc-9126-4919-863f-f0af975de505">Click here for a flowchart on how the game should work.</a>
 - Figure out how to manipulate the DOM to recongise when three boxes are clicked in a row. This can be done by completing the "Make_It_Green"                homework. A .targetevent method will be used in attempt to target the event of 3 boxes being 'clicked'. If this approach does not work, I will seek assistance in class.
 - Figure out how to make the game recognise two players and how to take turns. The method used for this will most likely be to store player1 and player2 in a variable and making a function to switch between players.
 
