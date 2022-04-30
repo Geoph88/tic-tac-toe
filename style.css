@@ -1,0 +1,28 @@
+/* .background {
+    background-color: yellowgreen;
+} */
+
+.container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 44% 44% 44%;
+    grid-template-rows: 44% 44% 44%;
+    height: 500px;
+    width: 500px;
+}
+
+span {
+    border: 5px solid black;
+}
+
+.playerinput {
+    background-color: yellowgreen;
+}
+
+.winner {
+    background-color: red;
+}
+
+.playing {
+    background-color: blue;
+}
