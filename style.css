@@ -1,31 +1,49 @@
-/* .background {
-    background-color: yellowgreen;
-} */
+h1 {
+    margin: auto;
+}
 
 .container {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: 44% 44% 44%;
-    grid-template-rows: 44% 44% 44%;
+    grid-template-columns: 44fr 44fr 44fr;
+    grid-template-rows: 44fr  44fr 44fr;
     height: 500px;
     width: 500px;
+    padding: 50px;
 }
 
 span {
     border: 5px solid black;
+    font-size: 150px;
+    cursor: pointer;
 }
-
-.playerinput {
-    background-color: yellowgreen;
-}
-
-
 
 .winner {
-    background-color: red;
+    background-color: gold;
 }
 
-.playing {
-    /* background-color: blue; */
-    font-size: 50px;
+#playing {
+    font-size: 100px;
+    cursor: not-allowed;
+}
+
+.reset-button {
+    width: 100px;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    transform: scale(1.1);
+}
+
+.end-message {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    display: flex;
+    justify-content: center;
+    align-items: center; */
 }

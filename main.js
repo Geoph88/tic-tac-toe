@@ -13,22 +13,27 @@ var getBox7 = document.querySelector('.box7')
 var getBox8 = document.querySelector('.box8')
 var playerTurn = playerO
 var endMessage = document.querySelector('.end-message')
+var resetBtn = document.querySelector('.reset-button')
 
 // alternate between turns
-    singleBoxes.addEventListener('click', function (event){
-        if (playerTurn === playerO) {
-            if (event.target.tagName === 'SPAN') {
-                event.target.textContent = playerO
-                console.log(playerTurn)
-                playerTurn = playerX
-            }
-        } else {
-            if (event.target.tagName === 'SPAN') {
-                event.target.textContent = playerX
-                console.log(playerTurn)
-                playerTurn = playerO
-            }
+singleBoxes.addEventListener('click', function (event){
+    if (playerTurn === playerO) {
+        if (event.target.tagName === 'SPAN') {
+            event.target.textContent = playerO
+            console.log(playerTurn)
+            playerTurn = playerX
         }
+    } else {
+        if (event.target.tagName === 'SPAN') {
+            event.target.textContent = playerX
+            console.log(playerTurn)
+            playerTurn = playerO
+        }
+    }
+})
+
+resetBtn.addEventListener('click', function(event){
+    location.reload()
     })
 
 
