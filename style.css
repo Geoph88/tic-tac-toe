@@ -19,10 +19,13 @@ span {
     background-color: yellowgreen;
 }
 
+
+
 .winner {
     background-color: red;
 }
 
 .playing {
-    background-color: blue;
+    /* background-color: blue; */
+    font-size: 50px;
 }
