@@ -35,5 +35,21 @@ To make a tictactoe game in which two players can play in browser. Basic functio
  3. Writing code with the readability for the programmer can make it inaccessible to other users interpreting this code. 
 
 ### The code you're proud of
+Creating the win conditions of the game and getting javascript to interact with the elements of the DOM to recognise those win conditions. 
+Styling the reset button to have a hover over function.
+Using both javascript to implement css styles via manipulating the DOM elements. 
+
+
 ### Lessons learnt
+Using the inspect dimensions feature in the google chrome console can actually hinder the progress made when making responsive design. Focusing on smaller viewports without considering the larger viewports at the same time when coding affected the responsive design of this project.
+
+While the deliverables above were helpful for setting daily goals and suggesting methods to achieve the logic, it would have been a much better planning method to break those goals into further steps. For example with the task of alternating players, while it was stored in a function, it would have been more useful to define the deliverables for that task as 'Step 1 define a variable for player1, Step 2 define a variable for player 2, Step make a listener event that recognises the variables of one of these players' and so on.
+
+### Unsolved problems. 
+The deliverables that were defined in day 4 have been unsolved.
+
+When this website is run on devices with smaller viewports, the .container does not center and is at the end of the right side of the website. 
+
+Both pop out messages for winning does not allow for the click of the reset button and the browser has to be refreshed on the user's end to reset the game again.
+
 <a href= "https://geoph88.github.io/tic-tac-toe/">Click here to play the game</a>
