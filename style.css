@@ -1,10 +1,11 @@
 body {
     max-width: 2000px;
     min-width: 350px;
+    margin: auto;
 }
 
-header{
-    margin-bottom: auto;
+header {
+    font-size: 50px;
 }
 
 .background {
@@ -12,46 +13,47 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 100px;
-    min-height: 300px;
     min-width: 300px;
-    margin: auto;
     padding-bottom: 0;
     max-width: 1000px;
+    min-height: 350px;
+    max-height: 1000px;
+    margin: inherit;
 }
 
 .container {
     display: grid;
-    margin: 0 auto;
     grid-template-columns: 44fr 44fr 44fr;
     grid-template-rows: 44fr  44fr 44fr;
-    height: 300px;
-    width: 300px;
+    height: 30%;
+    width: 30%;
 }
 
 div {
-    border: 5px solid black;
+    border: 2px solid black;
     cursor: pointer;
     min-width: 100px;
     min-height: 100px;
+    padding-top: 30px;
 }
 
 .winner {
     background-color: gold;
-    color: red;
 }
 
 #playing {
     font-size: 50px;
     cursor: not-allowed;
     text-align: center;
-    padding-top: 20px;
-
 }
 
 .reset-button {
-    width: 100px;
+    width: 200px;
     cursor: pointer;
-    margin-top: 50px;
+}
+
+#winning-message {
+    font-size: 100px;
 }
 
 .reset-button:hover {
@@ -63,6 +65,7 @@ div {
     background-image: url(https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
     background-repeat: no-repeat;
     background-size: cover;
+    width: fit-content;
     background-position: center;
     opacity: 0.5;
     position: fixed;
@@ -73,9 +76,8 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-size: 50px;
-    font-style: bold;
+    color: white;
+    font-weight: bold;
 }
 
 .end-message-meat {
@@ -83,6 +85,7 @@ div {
     background-image: url(https://images.unsplash.com/photo-1585325701165-351af916e581?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=80);
     background-size: cover;
     background-position: center;
+    width: fit-content;
     opacity: 0.5;
     position: fixed;
     top: 0;
@@ -92,17 +95,13 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-size: 50px;
-    font-style: bold;
+    color: white;
+    font-weight: bold;
 }
 
-@media only screen and (min-width: 390px) {
-    .container {
-        margin-left: 20px;
-    }
-
-    .end-message-meat, .end-message-lettuce {
-       background-size: fit-content; 
-    }
+.end-message-tie {
+    margin: auto;
+    margin: 0;
+    color: black;
+    font-weight: bold;
 }
