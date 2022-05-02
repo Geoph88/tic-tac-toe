@@ -23,17 +23,20 @@ header{
 
 div {
     border: 5px solid black;
-    font-size: 150px;
     cursor: pointer;
 }
 
 .winner {
     background-color: gold;
+    color: red;
 }
 
 #playing {
     font-size: 100px;
     cursor: not-allowed;
+    text-align: center;
+    padding-top: 20px;
+
 }
 
 .reset-button {

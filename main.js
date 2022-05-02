@@ -1,7 +1,7 @@
 var singleBoxes = document.querySelector('section')
 var getDiv = document.querySelector('div') 
-var playerO = 'O'
-var playerX = 'X'
+var playerO = '⭕'
+var playerX = '❌'
 var getBox0 = document.querySelector('.box0')
 var getBox1 = document.querySelector('.box1')
 var getBox2 = document.querySelector('.box2')
@@ -41,11 +41,12 @@ resetBtn.addEventListener('click', function(){
     location.reload()
     })
 
-function popOutMessage() {
-    if (endMessage.className = 'end-message') {
-        playerTurn = playerO
-        endMessage.textContent = playerTurn + ' wins!'
-    }
+function popOutMessage(){
+    endMessage.textContent = 'you win'
+}
+
+function addButton(){
+    document.createElement('button')
 }
 
 
@@ -57,7 +58,7 @@ singleBoxes.addEventListener('click', function(event){
     if(document.querySelectorAll('#playing').length === 5){
     var allDivElements = document.querySelectorAll('#playing') 
     for(var i = 0; i < allDivElements.length; i++) {
-        if(((getBox0.id === 'playing') && (getBox1.id === 'playing') && (getBox2.textContent === playerO))) {
+        if(((getBox0.textContent === playerO) && (getBox1.textContent === playerO) && (getBox2.textContent === playerO))) {
             getBox0.className = 'winner'
             getBox1.className = 'winner'
             getBox2.className = 'winner'
