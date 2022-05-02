@@ -2,6 +2,16 @@ h1 {
     margin: auto;
 }
 
+header{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.background {
+    display: grid;
+    justify-items: center;
+}
+
 .container {
     display: grid;
     margin: 0 auto;
@@ -9,10 +19,9 @@ h1 {
     grid-template-rows: 44fr  44fr 44fr;
     height: 500px;
     width: 500px;
-    padding: 50px;
 }
 
-span {
+div {
     border: 5px solid black;
     font-size: 150px;
     cursor: pointer;
@@ -30,6 +39,7 @@ span {
 .reset-button {
     width: 100px;
     cursor: pointer;
+    margin-top: 50px;
 }
 
 .reset-button:hover {
@@ -37,7 +47,7 @@ span {
 }
 
 .end-message {
-    /* position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -45,5 +55,6 @@ span {
     background-color: rgba(0, 0, 0, .9);
     display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
+    color: white;
 }
