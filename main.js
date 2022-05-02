@@ -41,21 +41,32 @@ resetBtn.addEventListener('click', function(){
     location.reload()
     })
 
+
+//a function that pops out a message when lettuce wins
 function popOutMessageLettuce(){
     winningMessage.className = 'end-message-lettuce'
-    winningMessage.textContent = 'You win! You converted to Vegetarianism'
+    winningMessage.textContent = 'You win! The loser converts to Vegetarianism'
 }
 
+//a function that pops out a message when meat wins
 function popOutMessageMeat(){
     winningMessage.className = 'end-message-meat'
-    winningMessage.textContent = 'You win! You converted to Carnism'
+    winningMessage.textContent = 'You win! The loser converts to Carnism'
 }
+
+//a function for the pop out message when it's a tie
+function popOutTieMessage() {
+        winningMessage.className = 'end-message-tie'
+        winningMessage.textContent = "It's a Tie! Eat what you want!"
+}
+
 
 
 //win conditions for the game
 singleBoxes.addEventListener('click', function(event){
     if(event.target.tagName === 'DIV') {
         event.target.id = 'playing'
+        winningMessage.textContent = ''
     }
     if(document.querySelectorAll('#playing').length === 5){
     var allDivElements = document.querySelectorAll('#playing') 
@@ -313,7 +324,7 @@ singleBoxes.addEventListener('click', function(event){
                     getBox6.className = 'winner'
                     popOutMessageLettuce()
             } else {
-                endMessage.textContent ="It's a Tie!"
+                popOutTieMessage()
             }
         }
     }
