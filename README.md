@@ -48,7 +48,7 @@ While the deliverables above were helpful for setting daily goals and suggesting
 ### Unsolved problems. 
 The deliverables that were defined in day 4 have been unsolved.
 
-When this website is run on devices with smaller viewports, the .container does not center and is at the end of the right side of the website. 
+When this website is run on devices with smaller viewports, the .container does not center and is at the end of the right side of the website. The user would also have to scroll to see the messages that are displayed at the beginning and when a tie occurs.
 
 Both pop out messages for winning does not allow for the click of the reset button and the browser has to be refreshed on the user's end to reset the game again.
 
