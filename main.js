@@ -1,7 +1,7 @@
 var singleBoxes = document.querySelector('section')
 var getDiv = document.querySelector('div') 
-var playerO = '⭕'
-var playerX = '❌'
+var playerO = '🥬'
+var playerX = '🍖'
 var getBox0 = document.querySelector('.box0')
 var getBox1 = document.querySelector('.box1')
 var getBox2 = document.querySelector('.box2')
@@ -14,7 +14,7 @@ var getBox8 = document.querySelector('.box8')
 var playerTurn = playerO
 var endMessage = document.querySelector('.end-message')
 var resetBtn = document.querySelector('.reset-button')
-var endMessage = document.querySelector('#place-for-end-message')
+var winningMessage = document.querySelector('#winning-message')
 
 // alternate between turns
 function alternateTurns() {
@@ -41,12 +41,14 @@ resetBtn.addEventListener('click', function(){
     location.reload()
     })
 
-function popOutMessage(){
-    endMessage.textContent = 'you win'
+function popOutMessageLettuce(){
+    winningMessage.className = 'end-message-lettuce'
+    winningMessage.textContent = 'You win! You converted to Vegetarianism'
 }
 
-function addButton(){
-    document.createElement('button')
+function popOutMessageMeat(){
+    winningMessage.className = 'end-message-meat'
+    winningMessage.textContent = 'You win! You converted to Carnism'
 }
 
 
@@ -62,36 +64,42 @@ singleBoxes.addEventListener('click', function(event){
             getBox0.className = 'winner'
             getBox1.className = 'winner'
             getBox2.className = 'winner'
-            endMessage.className = 'end-message'
-            popOutMessage()
+            popOutMessageLettuce()
         } else if((getBox3.textContent === playerO) && (getBox4.textContent === playerO) && (getBox5.textContent === playerO)) {
             getBox3.className = 'winner'
             getBox4.className = 'winner'
             getBox5.className = 'winner'
+            popOutMessageLettuce()
         }   else if((getBox6.textContent === playerO) && (getBox7.textContent === playerO) && (getBox8.textContent === playerO)) {
             getBox6.className = 'winner'
             getBox7.className = 'winner'
             getBox8.className = 'winner'
+            popOutMessageLettuce()
             } else if((getBox0.textContent === playerO) && (getBox3.textContent === playerO) && (getBox6.textContent === playerO)) {
                 getBox0.className = 'winner'
                 getBox3.className = 'winner'
                 getBox6.className = 'winner'
+                popOutMessageLettuce()
             } else if((getBox1.textContent === playerO) && (getBox4.textContent === playerO) && (getBox7.textContent === playerO)) {
                 getBox1.className = 'winner'
                 getBox4.className = 'winner'
                 getBox7.className = 'winner'
+                popOutMessageLettuce()
             } else if((getBox2.textContent === playerO) && (getBox5.textContent ===  playerO) && (getBox8.textContent === playerO)) {
                 getBox2.className = 'winner'
                 getBox5.className = 'winner'
                 getBox8.className = 'winner'
+                popOutMessageLettuce()
             } else if((getBox0.textContent === playerO) && (getBox4.textContent ===  playerO) && (getBox8.textContent === playerO)) {
                     getBox0.className = 'winner'
                     getBox4.className = 'winner'
                     getBox8.className = 'winner'
+                    popOutMessageLettuce()
             } else if((getBox2.textContent === playerO) && (getBox4.textContent ===  playerO) && (getBox6.textContent === playerO)) {
                     getBox2.className = 'winner'
                     getBox4.className = 'winner'
                     getBox6.className = 'winner'
+                    popOutMessageLettuce()
             }
     } 
     }
@@ -109,34 +117,42 @@ singleBoxes.addEventListener('click', function(event){
             getBox0.className = 'winner'
             getBox1.className = 'winner'
             getBox2.className = 'winner'
+            popOutMessageMeat()
         } else if((getBox3.textContent === playerX) && (getBox4.textContent === playerX) && (getBox5.textContent === playerX)) {
             getBox3.className = 'winner'
             getBox4.className = 'winner'
             getBox5.className = 'winner'
+            popOutMessageMeat()
         }   else if((getBox6.textContent === playerX) && (getBox7.textContent === playerX) && (getBox8.textContent === playerX)) {
             getBox6.className = 'winner'
             getBox7.className = 'winner'
             getBox8.className = 'winner'
+            popOutMessageMeat()
             } else if((getBox0.textContent === playerX) && (getBox3.textContent === playerX) && (getBox6.textContent === playerX)) {
                 getBox0.className = 'winner'
                 getBox3.className = 'winner'
                 getBox6.className = 'winner'
+                popOutMessageMeat()
             } else if((getBox1.textContent === playerX) && (getBox4.textContent === playerX) && (getBox7.textContent === playerX)) {
                 getBox1.className = 'winner'
                 getBox4.className = 'winner'
                 getBox7.className = 'winner'
+                popOutMessageMeat()
             } else if((getBox2.textContent === playerX) && (getBox5.textContent ===  playerX) && (getBox8.textContent === playerX)) {
                 getBox2.className = 'winner'
                 getBox5.className = 'winner'
                 getBox8.className = 'winner'
+                popOutMessageMeat()
             } else if((getBox0.textContent === playerX) && (getBox4.textContent ===  playerX) && (getBox8.textContent === playerX)) {
                     getBox0.className = 'winner'
                     getBox4.className = 'winner'
                     getBox8.className = 'winner'
+                    popOutMessageMeat()
             } else if((getBox2.textContent === playerX) && (getBox4.textContent ===  playerX) && (getBox6.textContent === playerX)) {
                     getBox2.className = 'winner'
                     getBox4.className = 'winner'
                     getBox6.className = 'winner'
+                    popOutMessageMeat()
             }
         }
     }
@@ -154,34 +170,42 @@ singleBoxes.addEventListener('click', function(event){
             getBox0.className = 'winner'
             getBox1.className = 'winner'
             getBox2.className = 'winner'
+            popOutMessageLettuce()
         } else if((getBox3.textContent === playerO) && (getBox4.textContent === playerO) && (getBox5.textContent === playerO)) {
             getBox3.className = 'winner'
             getBox4.className = 'winner'
             getBox5.className = 'winner'
+            popOutMessageLettuce()
         }   else if((getBox6.textContent === playerO) && (getBox7.textContent === playerO) && (getBox8.textContent === playerO)) {
             getBox6.className = 'winner'
             getBox7.className = 'winner'
             getBox8.className = 'winner'
+            popOutMessageLettuce()
             } else if((getBox0.textContent === playerO) && (getBox3.textContent === playerO) && (getBox6.textContent === playerO)) {
                 getBox0.className = 'winner'
                 getBox3.className = 'winner'
                 getBox6.className = 'winner'
+                popOutMessageLettuce()
             } else if((getBox1.textContent === playerO) && (getBox4.textContent === playerO) && (getBox7.textContent === playerO)) {
                 getBox1.className = 'winner'
                 getBox4.className = 'winner'
                 getBox7.className = 'winner'
+                popOutMessageLettuce()
             } else if((getBox2.textContent === playerO) && (getBox5.textContent ===  playerO) && (getBox8.textContent === playerO)) {
                 getBox2.className = 'winner'
                 getBox5.className = 'winner'
                 getBox8.className = 'winner'
+                popOutMessageLettuce()
             } else if((getBox0.textContent === playerO) && (getBox4.textContent ===  playerO) && (getBox8.textContent === playerO)) {
                     getBox0.className = 'winner'
                     getBox4.className = 'winner'
                     getBox8.className = 'winner'
+                    popOutMessageLettuce()
             } else if((getBox2.textContent === playerO) && (getBox4.textContent ===  playerO) && (getBox6.textContent === playerO)) {
                     getBox2.className = 'winner'
                     getBox4.className = 'winner'
                     getBox6.className = 'winner'
+                    popOutMessageLettuce()
             }
         }
     }
@@ -199,34 +223,42 @@ singleBoxes.addEventListener('click', function(event){
             getBox0.className = 'winner'
             getBox1.className = 'winner'
             getBox2.className = 'winner'
+            popOutMessageMeat()
         } else if((getBox3.textContent === playerX) && (getBox4.textContent === playerX) && (getBox5.textContent === playerX)) {
             getBox3.className = 'winner'
             getBox4.className = 'winner'
             getBox5.className = 'winner'
+            popOutMessageMeat()
         }   else if((getBox6.textContent === playerX) && (getBox7.textContent === playerX) && (getBox8.textContent === playerX)) {
             getBox6.className = 'winner'
             getBox7.className = 'winner'
             getBox8.className = 'winner'
+            popOutMessageMeat()
             } else if((getBox0.textContent === playerX) && (getBox3.textContent === playerX) && (getBox6.textContent === playerX)) {
                 getBox0.className = 'winner'
                 getBox3.className = 'winner'
                 getBox6.className = 'winner'
+                popOutMessageMeat()
             } else if((getBox1.textContent === playerX) && (getBox4.textContent === playerX) && (getBox7.textContent === playerX)) {
                 getBox1.className = 'winner'
                 getBox4.className = 'winner'
                 getBox7.className = 'winner'
+                popOutMessageMeat()
             } else if((getBox2.textContent === playerX) && (getBox5.textContent ===  playerX) && (getBox8.textContent === playerX)) {
                 getBox2.className = 'winner'
                 getBox5.className = 'winner'
                 getBox8.className = 'winner'
+                popOutMessageMeat()
             } else if((getBox0.textContent === playerX) && (getBox4.textContent ===  playerX) && (getBox8.textContent === playerX)) {
                     getBox0.className = 'winner'
                     getBox4.className = 'winner'
                     getBox8.className = 'winner'
+                    popOutMessageMeat()
             } else if((getBox2.textContent === playerX) && (getBox4.textContent ===  playerX) && (getBox6.textContent === playerX)) {
                     getBox2.className = 'winner'
                     getBox4.className = 'winner'
                     getBox6.className = 'winner'
+                    popOutMessageMeat()
             } 
         }
     }
@@ -244,34 +276,42 @@ singleBoxes.addEventListener('click', function(event){
             getBox0.className = 'winner'
             getBox1.className = 'winner'
             getBox2.className = 'winner'
+            popOutMessageLettuce()
         } else if((getBox3.textContent === playerO) && (getBox4.textContent === playerO) && (getBox5.textContent === playerO)) {
             getBox3.className = 'winner'
             getBox4.className = 'winner'
             getBox5.className = 'winner'
+            popOutMessageLettuce()
         }   else if((getBox6.textContent === playerO) && (getBox7.textContent === playerO) && (getBox8.textContent === playerO)) {
             getBox6.className = 'winner'
             getBox7.className = 'winner'
             getBox8.className = 'winner'
+            popOutMessageLettuce()
             } else if((getBox0.textContent === playerO) && (getBox3.textContent === playerO) && (getBox6.textContent === playerO)) {
                 getBox0.className = 'winner'
                 getBox3.className = 'winner'
                 getBox6.className = 'winner'
+                popOutMessageLettuce()
             } else if((getBox1.textContent === playerO) && (getBox4.textContent === playerO) && (getBox7.textContent === playerO)) {
                 getBox1.className = 'winner'
                 getBox4.className = 'winner'
                 getBox7.className = 'winner'
+                popOutMessageLettuce()
             } else if((getBox2.textContent === playerO) && (getBox5.textContent ===  playerO) && (getBox8.textContent === playerO)) {
                 getBox2.className = 'winner'
                 getBox5.className = 'winner'
                 getBox8.className = 'winner'
+                popOutMessageLettuce()
             } else if((getBox0.textContent === playerO) && (getBox4.textContent ===  playerO) && (getBox8.textContent === playerO)) {
                     getBox0.className = 'winner'
                     getBox4.className = 'winner'
                     getBox8.className = 'winner'
+                    popOutMessageLettuce()
             } else if((getBox2.textContent === playerO) && (getBox4.textContent ===  playerO) && (getBox6.textContent === playerO)) {
                     getBox2.className = 'winner'
                     getBox4.className = 'winner'
                     getBox6.className = 'winner'
+                    popOutMessageLettuce()
             } else {
                 endMessage.textContent ="It's a Tie!"
             }
